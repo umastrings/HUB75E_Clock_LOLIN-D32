@@ -29,8 +29,8 @@
 static const char *TAG = "MAIN";
 
 /* ── WiFi 설정 ── */
-#define WIFI_SSID       "Bitdol_wifi"
-#define WIFI_PASS       "bitdol5124!"
+#define WIFI_SSID       "2.4GHz WiFi SSID"
+#define WIFI_PASS       "WiFi password"
 #define NTP_SRV         "pool.ntp.org"
 #define WIFI_MAX_RETRY  20
 #define W_CONN_BIT      BIT0
