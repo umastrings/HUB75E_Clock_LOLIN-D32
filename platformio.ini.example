@@ -7,11 +7,19 @@
 ;
 ; Please visit documentation for the other options and examples
 ; https://docs.platformio.org/page/projectconf.html
+;
+; ★ 이 파일을 복사해서 platformio.ini 로 저장한 뒤 아래 build_flags 에
+;   본인의 WiFi 정보를 채우세요. platformio.ini 는 .gitignore 에 있어서
+;   git에 커밋되지 않습니다.
 
 [env:lolin_d32]
 platform  = espressif32@6.13.0
 board = lolin_d32
 framework = espidf
+
+build_flags =
+    -DWIFI_SSID='"your_wifi_ssid"'
+    -DWIFI_PASS='"your_wifi_password"'
 
 monitor_speed   = 115200
 monitor_filters = esp32_exception_decoder, time
